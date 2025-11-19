@@ -1,11 +1,12 @@
 <div align="center">
 
-# 🎥 Demonstração do Projeto
+# Sorting Algorithm
 
-## Vídeo de Funcionamento
+
+## Bubble Sort
 
 ![Demo GIF](https://github.com/AdrianDias444/python_practice/raw/main/videos/demo.gif)
 
-*GIF demonstrativo do projeto - Reprodução automática*
+**
 
 </div>
