@@ -5,7 +5,30 @@
 
 ## Bubble Sort
 
-![Demo GIF](https://github.com/AdrianDias444/python_practice/raw/main/videos/demo.gif)
+![Demo GIF](https://github.com/AdrianDias444/python_practice/raw/main/videos/bubble_sort.gif)
+
+**
+
+</div>
+
+
+
+<div align="center">
+
+
+
+## Selection Sort
+
+![Demo GIF](https://github.com/AdrianDias444/python_practice/raw/main/videos/selection_sort.gif)
+
+**
+
+</div>
+
+
+## Insertion Sort
+
+![Demo GIF](https://github.com/AdrianDias444/python_practice/raw/main/videos/insertion_sort.gif)
 
 **
 
