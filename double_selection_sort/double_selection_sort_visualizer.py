@@ -5,22 +5,35 @@ import matplotlib.pyplot as plt
 def visualizador_simples(array):
     estados = []
 
-    def insertion_sort(array):
-        n = len(array)
-        for i in range(n - 1):
-            j = i + 1
-            while array[j] < array[j - 1] and j > 0:
-                array[j], array[j - 1] = array[j - 1], array[j]
-                estados.append(array.copy())
-                j = j - 1
+    def double_selection_sort(array):
+        i = 0
+        j = len(array) - 1
+        while i < j:
+            min = i
+            max = j
+
+            for k in range(i + 1, j + 1):
+                if array[min] > array[k]:
+                    min = k
+            array[i], array[min] = array[min], array[i]
+            estados.append(array.copy())
+
+            for l in range(j - 1, i - 1, -1):
+                if array[max] < array[l]:
+                    max = l
+            array[j], array[max] = array[max], array[j]
+            estados.append(array.copy())
+
+            i = i + 1
+            j = j - 1
 
     arr_copia = array.copy()
-    insertion_sort(arr_copia)
+    double_selection_sort(arr_copia)
 
     # Configuração do gráfico
     fig, ax = plt.subplots(figsize=(12, 6))
     bars = ax.bar(range(len(array)), array, color="lightblue")
-    ax.set_title("Insertion Sort Algorithm")
+    ax.set_title("Double Selection Sort Algorithm")
 
     def animar(frame):
         if frame < len(estados):
@@ -32,7 +45,6 @@ def visualizador_simples(array):
 
             for txt in ax.texts:
                 txt.remove()
-
             for k, valor in enumerate(arr_estado):
                 ax.text(
                     k,
@@ -46,7 +58,7 @@ def visualizador_simples(array):
 
     # Cria animação
     anim = animation.FuncAnimation(
-        fig, animar, frames=len(estados), interval=10, repeat=False, blit=True
+        fig, animar, frames=len(estados), interval=1000, repeat=False, blit=True
     )
     plt.show()
 
