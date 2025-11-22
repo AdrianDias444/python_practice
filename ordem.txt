@@ -1,0 +1,24 @@
+- bubble sort
+- selection sort
+- insertion sort
+
+- gnome sort
+- cocktail shaker sort
+
+- comb sort
+- odd-even sort
+
+- merge sort
+- quick sort
+- heap sort
+- intro sort
+
+- tim sort
+- dual-pivot quick sort
+
+- counting sort
+- bucket sort
+- radix sort
+
+- bogo sort
+- sleep sort
