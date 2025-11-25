@@ -5,8 +5,8 @@ def bubble_sort(array):
     while trocou:
         trocou = False
         i = 0
-        while(i < n - 1):
-            if(array[i] > array[i + 1]):
+        while i < n - 1:
+            if array[i] > array[i + 1]:
                 temp = array[i + 1]
                 array[i + 1] = array[i]
                 array[i] = temp
@@ -18,3 +18,4 @@ array = [0, 3, 90, 1, 7, 2, 4, 11]
 bubble_sort(array)
 for i in range(len(array)):
     print(array[i])
+
