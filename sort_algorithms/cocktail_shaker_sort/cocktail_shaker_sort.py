@@ -5,7 +5,7 @@ def cocktail_shaker_sort(array):
     i = 0
     while trocou:
         trocou = False
-        while i < max:
+        while i < (max - 1):
             j = i + 1
             if array[i] > array[j]:
                 array[i], array[j] = array[j], array[i]
@@ -23,7 +23,7 @@ def cocktail_shaker_sort(array):
         min = min + 1
 
 
-array = [33,201,89,242,142]
+array = [3, 1, 2, 4, 8, 5]
 
 cocktail_shaker_sort(array)
 for i in range(len(array)):
